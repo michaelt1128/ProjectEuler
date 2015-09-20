@@ -1,6 +1,6 @@
 package eulerCode;
 
-public class Problem1 {
+public class Problem001 {
 	public static void main(String[] args)
 	{
 		System.out.println(problem1());

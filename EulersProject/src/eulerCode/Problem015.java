@@ -5,7 +5,7 @@ import java.math.BigInteger;
 public class Problem015 {
 	public static void main(String[] args)
 	{
-		for(int len = 0; len <=20; len++)
+		for(int len = 0; len <=100; len++)
 		{
 			int n = len;
 			int k = len;

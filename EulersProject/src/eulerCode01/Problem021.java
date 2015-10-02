@@ -2,7 +2,7 @@ package eulerCode01;
 
 import java.util.ArrayList;
 
-public class Problem21 {
+public class Problem021 {
 	public static void main(String[] args){
 		int sumNums = 0;
 		for(int i = 0; i < 10000; i++) {

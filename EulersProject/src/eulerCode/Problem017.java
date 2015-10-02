@@ -5,7 +5,6 @@ public class Problem017 {
 	public static void main(String[] args) 
 	{
 		String numStr = "";
-		String numberAsString = "";
 		String[] numOneStringer = {"zero","one","two","three","four","five","six","seven","eight","nine"};
 		String[] numOneString = {"","one","two","three","four","five","six","seven","eight","nine"};
 		String[] teensArray = {"ten","eleven","twelve","thirteen","fourteen","fifteen","sixteen","seventeen","eighteen","nineteen"};
@@ -14,7 +13,6 @@ public class Problem017 {
 		
 		for(int i = 1; i<1000; i++)
 		{
-			numberAsString = String.valueOf(i);
 			if(i>99)
 			{
 

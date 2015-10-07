@@ -1,7 +1,6 @@
 package eulerCode01;
 
 import java.util.Arrays;
-import java.util.List;
 
 
 public class Problem024 {

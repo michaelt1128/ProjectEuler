@@ -15,7 +15,6 @@ public class Problem028 {
 		int answer = 0;
 		int s = n*n; 
 		answer = 4 * s - 6 * (n-1);
-		
 		return answer;
 	}
 }

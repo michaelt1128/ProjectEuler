@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
+import allMethods.Maths;
 
 
 public class Problem032 {
@@ -17,7 +18,8 @@ public class Problem032 {
 		for (int i = 200; i < 100000; i++) { //Main loop through all numbers
 			ArrayList<Integer> temp = new ArrayList<Integer>();
 			for (int j : intToArray(i)) temp.add(j);
-			if (!hasDuplicate(temp)) { //Check if the number has duplicates before proceeding
+			Maths m = new Maths();
+			if (!m.hasDuplicate(temp)) { //Check if the number has duplicates before proceeding
 				ArrayList<Integer> factors = factor(i); //get factors of the current number
 				for (int factor : factors) { //go through all of the factors of the number
 					ArrayList<Integer> currentTotal = new ArrayList<Integer>();

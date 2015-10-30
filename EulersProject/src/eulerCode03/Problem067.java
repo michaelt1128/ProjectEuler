@@ -1,4 +1,4 @@
-package eulerCode02;
+package eulerCode03;
 
 import java.io.BufferedReader;
 import java.io.File;

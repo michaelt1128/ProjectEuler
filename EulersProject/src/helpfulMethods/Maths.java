@@ -151,16 +151,8 @@ public class Maths {
 	}
 	
 	public boolean isTriangleNumber(int num) {
-		int count = 1;
-		int triangle = 0;
-		while(triangle<=num) {
-			triangle = (int) (.5 * count * (count+1));
-			if(num == triangle) {
-				return true;
-			}
-			count++;
-		}
-		return false;
+		double triTest = (Math.sqrt(8*num+1) - 1) / 2;
+		return triTest == (int)triTest;
 	}
 	
 	public ArrayList<Integer> generatePentagonals(int maxIndex) {
@@ -171,12 +163,17 @@ public class Maths {
 		return pents;
 	}
 	
-	public boolean isPentagonalNumber(int num) {
+	public boolean isPentagonalNumber(long num) {
 		double penTest = (Math.sqrt(1 + 24 * num) + 1.0) / 6.0;
 		return penTest == (int)penTest;
 	}
 	
 	public int generateSpecificPentagonal(int index) {
 		return (int)(.5 * index * (3 * index - 1));
+	}
+	
+	public boolean isHexagonalNumber(long num) {
+		double hexTest = (Math.sqrt(8 * num + 1) + 1)/4;
+		return hexTest == (int) hexTest;
 	}
 }

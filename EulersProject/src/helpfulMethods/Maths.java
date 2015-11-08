@@ -180,4 +180,14 @@ public class Maths {
 		}
 		return list;
 	}
+	
+	public boolean isPermutation(int num, int num2) {
+		Maths m = new Maths();
+		ArrayList<Integer> n1 = m.intToArrayList(num);
+		ArrayList<Integer> n2 = m.intToArrayList(num2);
+		if(n1.containsAll(n2) && n2.containsAll(n1)) {
+			return true;
+		}
+		return false;
+	}
 }

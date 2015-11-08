@@ -6,10 +6,6 @@ import java.util.Set;
 
 public class Maths {
 	public static void main(String[] args) {
-		Maths m = new Maths();
-		System.out.println(m.factors(20));
-		System.out.println(m.intToArrayList(2341));
-		System.out.println(m.isPrime(541));
 	}
 	
 	public ArrayList<Integer> factors(int num) {
@@ -175,5 +171,13 @@ public class Maths {
 	public boolean isHexagonalNumber(long num) {
 		double hexTest = (Math.sqrt(8 * num + 1) + 1)/4;
 		return hexTest == (int) hexTest;
+	}
+	
+	public ArrayList<Integer> arrayToArrayList(int array[]) {
+		ArrayList<Integer> list = new ArrayList<Integer>();
+		for(int i : array) {
+			list.add(i);
+		}
+		return list;
 	}
 }

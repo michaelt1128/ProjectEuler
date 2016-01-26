@@ -1,8 +1,5 @@
 package eulerCode02;
 
-//import java.util.ArrayList;
-import java.util.HashSet;
-
 import helpfulMethods.Maths;
 
 public class Problem047 {

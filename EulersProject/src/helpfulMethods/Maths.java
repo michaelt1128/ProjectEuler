@@ -59,7 +59,7 @@ public class Maths {
 		return Integer.valueOf(str);
 	}
 	
-	public boolean isPrime(int num) {
+	public boolean isPrime(long num) {
 		for(int i = 2; i<=Math.sqrt(num); i++) {
 			if(num%i==0) {
 				return false;

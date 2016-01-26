@@ -1,5 +1,6 @@
 package helpfulMethods;
 
+import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Set;
@@ -189,5 +190,17 @@ public class Maths {
 			return true;
 		}
 		return false;
+	}
+	public BigInteger bigFactorial(int a) {
+		BigInteger n = new BigInteger("" + 1);
+		for (int i = 2; i <= a; i++) {
+	           n = n.multiply(new BigInteger(i + ""));
+	    }
+		return n;
+	}
+	public BigInteger combinatorics(int n, int r) {
+		BigInteger a = new BigInteger(String.valueOf(n));
+		
+		return this.bigFactorial(n).divide(this.bigFactorial(r).multiply(this.bigFactorial(n-r)));
 	}
 }
